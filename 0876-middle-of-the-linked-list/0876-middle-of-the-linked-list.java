@@ -11,7 +11,12 @@
 class Solution {
     public ListNode middleNode(ListNode head) {
         ListNode f = head;
-        
+        if(f==null){
+            return null;
+        }
+        if(f.next == null){
+            return f;
+        }
 
         ListNode s = head;
 
